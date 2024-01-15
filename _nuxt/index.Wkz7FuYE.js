@@ -1,0 +1,1 @@
+import{_ as e,c as t,o,a as s}from"./entry.T1zo_6Vq.js";const c={},n=s("h1",{class:"text-6xl font-bold"},"NuxtUI with GSAP-Snippets",-1),a=[n];function _(r,d){return o(),t("div",null,a)}const l=e(c,[["render",_]]);export{l as default};

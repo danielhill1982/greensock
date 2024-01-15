@@ -1,0 +1,1 @@
+import{g as e}from"./index.35H_NU9g.js";import{f as o,c as t,o as s,a as r}from"./entry.T1zo_6Vq.js";const a=r("h1",{class:"inline-block border-4 p-4 border-slate-600 bg-slate-800 text-6xl text-red-600"},"Hello world",-1),l=[a],p={__name:"slide",setup(n){return o(()=>{e.from("h1",{y:600,duration:2})}),(c,d)=>(s(),t("div",null,l))}};export{p as default};
