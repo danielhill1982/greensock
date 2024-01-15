@@ -1,1 +1,0 @@
-import{g as o}from"./index.35H_NU9g.js";import{f as t,c as e,o as s}from"./entry.T1zo_6Vq.js";const a={class:"bounty w-20 h-20 bg-slate-400"},m={__name:"bounty",setup(n){return t(()=>{o.from(".bounty",{x:400,y:600,duration:3,ease:"bounce"})}),(r,c)=>(s(),e("div",a))}};export{m as default};

@@ -1,1 +1,0 @@
-import{g as e}from"./index.35H_NU9g.js";import{f as a,c as r,o as s}from"./entry.T1zo_6Vq.js";const c={class:"boxy w-52 h-52 bg-slate-500 blur-xl opacity-0"},p={__name:"reveal",setup(l){return a(()=>{const o=document.querySelector(".boxy"),t=e.timeline({defaults:{duration:1}});t.to(o,{opacity:1,filter:"blur(0px)"}),t.play()}),(o,t)=>(s(),r("div",c))}};export{p as default};
