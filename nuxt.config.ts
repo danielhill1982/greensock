@@ -4,8 +4,5 @@ export default defineNuxtConfig({
   build: {
     transpile: ["gsap"],
   },
-  app: {
-    baseURL: "/greensock"
-  },
   modules: ['@nuxt/ui']
 })
