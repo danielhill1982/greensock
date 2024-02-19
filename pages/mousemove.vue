@@ -9,7 +9,7 @@
 </template>
 
 
-<script setup>
+<script setup lang="ts">
 import { gsap } from 'gsap';
 
 
@@ -24,7 +24,7 @@ onMounted(() => {
         // Add GSAP Effect
         gsap.to(".header-banner", {
             // The '30' value bellow corresponds to the effect power, change it as you want
-            x: (mouseX / window.innerWidth - 0.5) * 90,
+            x: (mouseX / window.innerWidth - 0.5) * 180,
             y: (mouseY / window.innerHeight - 0.5) * 90,
             delay: 0.1,
             ease: "power2.out",

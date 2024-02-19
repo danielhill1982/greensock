@@ -32,9 +32,6 @@ const links = [{
     label: 'Blinking Text',
     to: '/blinkingtext/'
 }, {
-    label: 'Draggable Gallery',
-    to: '/gallery/'
-}, {
     label: 'Hue Boxes',
     to: '/hueboxes/'
 }, {
@@ -43,6 +40,9 @@ const links = [{
 }, {
     label: 'Mouse Follow',
     to: '/mousefollow/'
+}, {
+    label: 'Staggered Text',
+    to: '/staggered/'
 }]
 
 </script>

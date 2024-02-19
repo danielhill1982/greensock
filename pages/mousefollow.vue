@@ -2,64 +2,57 @@
 
 <template>
    
-  <div class="boxed w-96 h-96 bg-slate-300 relative">
-    <div class="follower bg-sky-400 w-14 h-14 rounded-full absolute opacity-0"></div>
-  </div>
+   <div id="cursor-follow">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+ </div>
 
 </template>
 
 
-<script setup>
+<script setup lang="ts">
 import { gsap } from 'gsap';
 
 
 
 onMounted(() => {
 
-const follower = document.querySelector(".follower");
-gsap.set(follower, {
-  opacity: 1,
-  scale: 0,
-  transformOrigin: "center center",
-  xPercent: -50,
-  yPercent: -50
-});
-const xTo = gsap.quickTo(follower, "x", { ease: "power3" });
-const yTo = gsap.quickTo(follower, "y", { ease: "power3" });
+  document.addEventListener("mousemove", (ev) => {
+  const x = ev.clientX,
+    y = ev.clientY;
 
-const box = document.querySelector(".boxed");
-const boxPosition = box.getBoundingClientRect().x;
-const boxLeft = box.getBoundingClientRect().x;
-const boxTop = box.offsetTop;
-
-box.addEventListener("mousemove", (e) => {
-  console.log(e.pageY, e.clientY, boxTop);
-  xTo(e.clientX - boxLeft);
-  yTo(e.pageY - boxTop);
-});
-
-box.addEventListener("mouseenter", () => {
-  gsap.to(follower, {
-    duration: 0.3,
-    opacity: 1,
-    scale: 1,
-    transformOrigin: "center center"
+  // lag cursor behind mouse
+  gsap.to("#cursor-follow > span", {
+    duration: (i) => 0.2 + i/10,
+    scale: (i) => 2 - i/10,
+    x,
+    y
   });
+
 });
-
-box.addEventListener("mouseleave", () => {
-  gsap.to(follower, {
-    duration: 0.3,
-    opacity: 0,
-    scale: 0,
-    transformOrigin: "center center"
-  });
-});
-
-
-
 });
 
 
 </script>
-  
+<style>
+
+
+#cursor-follow > span {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  pointer-events: none;
+  user-select: none;
+  backdrop-filter: invert(100%);
+}
+</style>
