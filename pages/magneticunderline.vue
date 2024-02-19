@@ -11,12 +11,13 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { gsap } from 'gsap';
 
 onMounted(() => {
 
-    let navItems = gsap.utils.toArray(".nav li")
+    const navItems = gsap.utils.toArray<HTMLLIElement>(".nav li")
+                                    
     let currentItem = navItems[0]
 
     function initNav() {
