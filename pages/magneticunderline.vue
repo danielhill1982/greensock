@@ -14,11 +14,7 @@
 <script setup>
 import { gsap } from 'gsap';
 
-
-
 onMounted(() => {
-
-
 
     let navItems = gsap.utils.toArray(".nav li")
     let currentItem = navItems[0]
@@ -41,10 +37,6 @@ onMounted(() => {
 
     gsap.to(".line", { autoAlpha: 1, duration: 0.2 })
 
-
-
 });
-
-
 </script>
   
