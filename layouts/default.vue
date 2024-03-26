@@ -50,7 +50,7 @@ const links = [{
 <template>
     <div class="w-100 h-100">
         <div class="grid grid-rows-1 grid-flow-col gap-4">
-            <div class="row-span-1">
+            <div class="col-span-1 w-60">
                 <UVerticalNavigation :links="links">
                     <template #default="{ link }">
                         <span class="group-hover:text-primary relative">{{ link.label }}</span>
