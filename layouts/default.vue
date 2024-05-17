@@ -32,6 +32,9 @@ const links = [{
     label: 'Blinking Text',
     to: '/blinkingtext/'
 }, {
+    label: 'Mouse Hue',
+    to: '/mousehue/'
+}, {
     label: 'Hue Boxes',
     to: '/hueboxes/'
 }, {

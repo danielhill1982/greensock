@@ -14,16 +14,16 @@
 <script setup lang="ts">
 import { gsap } from 'gsap';
 onMounted(() => {
-    gsap.fromTo(".huebox", {
-  backgroundColor: function(index, target, targets) {
-    return "hsl(" + ((index / targets.length) * 360) + ", 100%, 50%)";
-  }
-},{
-  backgroundColor: "hsl(-=360, +=0%, +=0%)",
-  duration: 10,
-  repeat: -1,
-  ease: "none"
-});
+  gsap.fromTo(".huebox", {
+    backgroundColor: function (index, _target, targets) {
+      return "hsl(" + ((index / targets.length) * 180) + ", 100%, 50%)";
+    }
+  }, {
+    backgroundColor: "hsl(-=360, +=0%, +=0%)",
+    duration: 10,
+    repeat: -1,
+    ease: "none"
+  });
 });
 
 </script>
