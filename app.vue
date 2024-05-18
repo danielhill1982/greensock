@@ -1,5 +1,26 @@
 
-<script setup>
+
+<template>
+    <div class="w-100 h-100">
+        <div class="grid grid-rows-1 grid-flow-col gap-4">
+            <div class="col-span-1 w-60">
+                <UVerticalNavigation :links="links">
+                    <template #default="{ link }">
+                        <span class="group-hover:text-primary relative">{{ link.label }}</span>
+                    </template>
+                </UVerticalNavigation>
+            </div>
+            <div class="col-span-2">
+                <div class="flex h-screen justify-center items-center">
+                    <NuxtPage/>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+
+<script setup lang="ts">
 
 const links = [{
     label: 'Start',
@@ -49,23 +70,3 @@ const links = [{
 }]
 
 </script>
-
-<template>
-    <div class="w-100 h-100">
-        <div class="grid grid-rows-1 grid-flow-col gap-4">
-            <div class="col-span-1 w-60">
-                <UVerticalNavigation :links="links">
-                    <template #default="{ link }">
-                        <span class="group-hover:text-primary relative">{{ link.label }}</span>
-                    </template>
-                </UVerticalNavigation>
-            </div>
-            <div class="col-span-2">
-                <div class="flex h-screen justify-center items-center">
-                    <NuxtPage/>
-                </div>
-            </div>
-        </div>
-    </div>
-</template>
-
