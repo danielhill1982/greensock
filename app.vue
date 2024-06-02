@@ -65,55 +65,13 @@ const items = [
 }, {
     label: 'Staggered Text',
     to: '/staggered/'
+}, {
+    label: 'Particle 01',
+    to: '/particle_01/'
+}, {
+    label: 'Particle 02',
+    to: '/particle_02/'
 }]
 ]
-
-
-/* const links = [{
-    label: 'Start',
-    to: '/'
-}, {
-    label: 'Slide',
-    to: '/slide/'
-}, {
-    label: 'Jumping',
-    to: '/jumping/'
-}, {
-    label: 'Typewriter',
-    to: '/typewriter/'
-}, {
-    label: 'Bounty',
-    to: '/bounty/'
-}, {
-    label: 'Expand',
-    to: '/expand/'
-}, {
-    label: 'Float',
-    to: '/float/'
-}, {
-    label: 'Mouse Move',
-    to: '/mousemove/'
-}, {
-    label: 'Magnetic Underline',
-    to: '/magneticunderline/'
-}, {
-    label: 'Blinking Text',
-    to: '/blinkingtext/'
-}, {
-    label: 'Mouse Hue',
-    to: '/mousehue/'
-}, {
-    label: 'Hue Boxes',
-    to: '/hueboxes/'
-}, {
-    label: 'Reveal',
-    to: '/reveal/'
-}, {
-    label: 'Mouse Follow',
-    to: '/mousefollow/'
-}, {
-    label: 'Staggered Text',
-    to: '/staggered/'
-}] */
 
 </script>
