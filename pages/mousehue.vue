@@ -1,5 +1,5 @@
 <template>
-<canvas id="myCanvas" width="800" height="600"></canvas>
+<canvas id="myCanvas" width="1100" height="400"></canvas>
 
 </template>
 
@@ -17,11 +17,9 @@ if (ctx === null) {
 }
 
 const colors: string[] = [
-    "#f44336",
-    "#E91E63",
-    "#673ab7",
-    "#03a9f4",
-    "#009688"
+    "#ff3300",
+	"#0099ff",
+	"#009900"
 ];
 
 const widthToColor = gsap.utils.pipe(
