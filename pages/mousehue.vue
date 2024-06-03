@@ -1,5 +1,5 @@
 <template>
-<canvas id="myCanvas" width="1100" height="400"></canvas>
+<canvas id="myCanvas" width="2000"></canvas>
 
 </template>
 
@@ -18,6 +18,8 @@ if (ctx === null) {
 
 const colors: string[] = [
     "#ff3300",
+    "#FFFF00",
+    "#FF00FF",
 	"#0099ff",
 	"#009900"
 ];
