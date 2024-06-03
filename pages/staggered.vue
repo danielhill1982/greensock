@@ -16,16 +16,12 @@
 
                         <p
                             class="hero-text bg-clip-text bg-gradient-to-tl from-blue-500 to-green-500 text-transparent leading-normal">
-                            Consulting</p>
+                            Consulting and Conception</p>
+                        
                         <p
                             class="hero-text bg-clip-text bg-gradient-to-tl from-blue-500 to-green-500 text-transparent leading-normal">
-                            Conception</p>
-                        <p
-                            class="hero-text bg-clip-text bg-gradient-to-tl from-blue-500 to-green-500 text-transparent leading-normal">
-                            Logo Design</p>
-                        <p
-                            class="hero-text bg-clip-text bg-gradient-to-tl from-blue-500 to-green-500 text-transparent leading-normal">
-                            UI/UX Design</p>
+                            Logo and UI/UX Design</p>
+                        
                         <p
                             class="hero-text bg-clip-text bg-gradient-to-tl from-blue-500 to-green-500 text-transparent leading-normal">
                             Software Development</p>
