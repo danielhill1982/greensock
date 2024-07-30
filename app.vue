@@ -1,6 +1,7 @@
 
 
 <template>
+    <div>
     <div class="h-10 flex m-2">
 
 
@@ -10,9 +11,9 @@
 
 
 </div>
-    <div class="flex h-full justify-center mt-20">
+    <div class="flex justify-center mt-20">
         <NuxtPage/>   
-    </div>
+    </div></div>
 </template>
 
 
